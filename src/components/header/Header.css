@@ -1,0 +1,71 @@
+header {
+  background-color: #282c34;
+  color: white;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 35px; /* Збільшити розмір іконки */
+  height: 40px;
+  margin-right: 1px; /* Відступ між іконкою і логотипом */
+  margin-top: 4px; /* Розташувати іконку трохи нижче */
+}
+
+.logo {
+  flex: 0 1 auto;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 18px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 9px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
